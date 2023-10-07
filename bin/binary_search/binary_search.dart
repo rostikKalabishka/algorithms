@@ -77,4 +77,11 @@ class Solution {
 
     return nes == b;
   }
+
+  int removeDuplicates(List<int> nums) {
+    final set = nums.toSet().toList();
+    nums.length = 0;
+    nums.addAll(set);
+    return nums.length;
+  }
 }
