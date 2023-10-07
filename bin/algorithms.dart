@@ -18,7 +18,10 @@ void main() {
 
   // print(solution.findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]));
   // print(solution.findDisappearedNumbers([1, 1]));
-  print(solution.plusOne([1, 2, 3]));
-  print(solution.plusOne([4, 3, 2, 1]));
-  print(solution.plusOne([9]));
+  // print(solution.plusOne([1, 2, 3]));
+  // print(solution.plusOne([4, 3, 2, 1]));
+  // print(solution.plusOne([9]));
+  print(solution.isPalindrome('A man, a plan, a canal: Panama'));
+  print(solution.isPalindrome('race a car'));
+  print(solution.isPalindrome(' '));
 }

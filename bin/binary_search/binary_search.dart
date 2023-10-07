@@ -69,4 +69,15 @@ class Solution {
       ((BigInt.parse(digits.join()) + BigInt.one).toString().split(''))
           .map((e) => int.parse(e))
           .toList();
+
+  bool isPalindrome(String s) {
+    var regExp = RegExp(r'[^A-Za-z0-9]');
+    var b = s.replaceAll(regExp, '').toLowerCase().trim();
+    if (b.isEmpty) return true;
+    var nes = b.split('').reversed.join();
+    if (b == nes) {
+      return true;
+    }
+    return false;
+  }
 }
