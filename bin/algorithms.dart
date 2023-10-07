@@ -12,7 +12,13 @@ void main() {
   // print(solution.missingNumber([0, 1]));
   // print(solution.missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]));
 
-  print(solution.containsDuplicate([1, 2, 3, 1]));
-  print(solution.containsDuplicate([1, 2, 3, 4]));
-  print(solution.containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+  // print(solution.containsDuplicate([1, 2, 3, 1]));
+  // print(solution.containsDuplicate([1, 2, 3, 4]));
+  // print(solution.containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+
+  // print(solution.findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]));
+  // print(solution.findDisappearedNumbers([1, 1]));
+  print(solution.plusOne([1, 2, 3]));
+  print(solution.plusOne([4, 3, 2, 1]));
+  print(solution.plusOne([9]));
 }

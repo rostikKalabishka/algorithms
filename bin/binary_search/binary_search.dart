@@ -54,8 +54,19 @@ class Solution {
     return false;
   }
 
-  // longestCommonPrefix(List<String> strs) {
-  //   final list1 = strs.map((e) => e.startsWith('fl'));
-  //   return list1;
-  // }
+  List<int> findDisappearedNumbers(List<int> nums) {
+    List<int> value = [];
+    for (int i = 1; i <= nums.length; i++) {
+      if (!nums.contains(i)) {
+        value.add(i);
+      }
+    }
+    return value;
+  }
+
+  // List<int>
+  List<int> plusOne(List<int> digits) =>
+      ((BigInt.parse(digits.join()) + BigInt.one).toString().split(''))
+          .map((e) => int.parse(e))
+          .toList();
 }
