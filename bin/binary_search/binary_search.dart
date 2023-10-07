@@ -64,7 +64,6 @@ class Solution {
     return value;
   }
 
-  // List<int>
   List<int> plusOne(List<int> digits) =>
       ((BigInt.parse(digits.join()) + BigInt.one).toString().split(''))
           .map((e) => int.parse(e))
@@ -75,9 +74,7 @@ class Solution {
     var b = s.replaceAll(regExp, '').toLowerCase().trim();
     if (b.isEmpty) return true;
     var nes = b.split('').reversed.join();
-    if (b == nes) {
-      return true;
-    }
-    return false;
+
+    return nes == b;
   }
 }
