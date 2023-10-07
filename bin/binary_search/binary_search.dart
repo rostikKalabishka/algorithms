@@ -36,14 +36,22 @@ class Solution {
   //   return t;
   // }
 
-  int missingNumber(List<int> nums) {
-    int value = 0;
-    for (int i = 0; i <= nums.length; i++) {
-      if (!nums.contains(i)) {
-        value = i;
-      }
+  // int missingNumber(List<int> nums) {
+  //   int value = 0;
+  //   for (int i = 0; i <= nums.length; i++) {
+  //     if (!nums.contains(i)) {
+  //       value = i;
+  //     }
+  //   }
+  //   return value;
+  // }
+
+  bool containsDuplicate(List<int> nums) {
+    var boba = nums.toSet().length;
+    if (boba != nums.length) {
+      return true;
     }
-    return value;
+    return false;
   }
 
   // longestCommonPrefix(List<String> strs) {
