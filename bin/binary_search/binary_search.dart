@@ -17,4 +17,22 @@ class Solution {
 
     return -1;
   }
+
+  int removeElement(List<int> nums, int val) {
+    for (var i = 0; i <= nums.length; i++) {
+      nums.remove(val);
+    }
+
+    return nums.length;
+  }
+  // int removeElement(List<int> nums, int val) {
+  //   int t = 0;
+  //   for (var i = 0; i < nums.length; i++) {
+  //     if (nums[i] != val) {
+  //       nums[t] = nums[i];
+  //       t++;
+  //     }
+  //   }
+  //   return t;
+  // }
 }
