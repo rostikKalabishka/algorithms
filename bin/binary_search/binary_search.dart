@@ -154,4 +154,16 @@ class Solution {
 
     return s.split(' ').reversed.join(' ');
   }
+
+  String finalString(String s) {
+    List<String> x = [];
+    for (var i = 0; i < s.length; i++) {
+      if (s[i] == 'i') {
+        x = x.reversed.toList();
+      } else {
+        x.add(s[i]);
+      }
+    }
+    return x.join();
+  }
 }
