@@ -84,4 +84,36 @@ class Solution {
     nums.addAll(set);
     return nums.length;
   }
+
+//   findTheDifference(String s, String t) {
+//     var splitS = s.split('');
+//     var splitT = t.split('');
+//     var res = [];
+//     for (var i = 0; i < splitT.length; i++) {
+//       if (!splitS.contains(splitT[i])) {
+//         res.add(splitT[i]);
+//       }
+//     }
+//     return res.join().toString();
+//   }
+
+//bad solution
+  int searchInsert(List<int> nums, int target) {
+    int res = 0;
+
+    for (var i = 0; i < nums.length; i++) {
+      if (nums[i] == target) {
+        res = i;
+        return res;
+      } else {
+        nums.add(target);
+        nums.sort();
+        if (nums[i] == target) {
+          res = i;
+          return i;
+        }
+      }
+    }
+    return res;
+  }
 }

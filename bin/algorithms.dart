@@ -21,7 +21,14 @@ void main() {
   // print(solution.plusOne([1, 2, 3]));
   // print(solution.plusOne([4, 3, 2, 1]));
   // print(solution.plusOne([9]));
-  print(solution.isPalindrome('A man, a plan, a canal: Panama'));
-  print(solution.isPalindrome('race a car'));
-  print(solution.isPalindrome(' '));
+  // print(solution.isPalindrome('A man, a plan, a canal: Panama'));
+  // print(solution.isPalindrome('race a car'));
+  // print(solution.isPalindrome(' '));
+  // print(solution.findTheDifference('abcd', "abcde"));
+  // print(solution.findTheDifference("", "y"));
+  // print(solution.findTheDifference("а", "аа"));
+
+  print(solution.searchInsert([1, 3, 5, 6], 5));
+  print(solution.searchInsert([1, 3, 5, 6], 2));
+  print(solution.searchInsert([1, 3, 5, 6], 7));
 }
