@@ -116,4 +116,21 @@ class Solution {
     }
     return res;
   }
+
+  int searchInsertV2(List<int> nums, int target) {
+    int low = 0;
+    int high = nums.length - 1;
+    while (low <= high) {
+      var midle = ((low + high) ~/ 2).toInt();
+      if (nums[midle] == target) {
+        return midle;
+      } else if (nums[midle] < target) {
+        low = midle + 1;
+      } else {
+        high = midle - 1;
+      }
+    }
+
+    return low;
+  }
 }

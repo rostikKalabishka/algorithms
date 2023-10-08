@@ -28,7 +28,7 @@ void main() {
   // print(solution.findTheDifference("", "y"));
   // print(solution.findTheDifference("а", "аа"));
 
-  print(solution.searchInsert([1, 3, 5, 6], 5));
-  print(solution.searchInsert([1, 3, 5, 6], 2));
-  print(solution.searchInsert([1, 3, 5, 6], 7));
+  print(solution.searchInsertV2([1, 3, 5, 6], 5));
+  print(solution.searchInsertV2([1, 3, 5, 6], 2));
+  print(solution.searchInsertV2([1, 3, 5, 6], 7));
 }
