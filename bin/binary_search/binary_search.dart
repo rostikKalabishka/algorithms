@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Solution {
   int binarySearch(List<int> nums, int target) {
     nums.sort();
@@ -165,5 +167,35 @@ class Solution {
       }
     }
     return x.join();
+  }
+
+  int maxNumber(List<int> arr) {
+    int res = 0;
+
+    for (var i = 0; i < arr.length; i++) {
+      res = max(res, arr[i]);
+    }
+    return res;
+  }
+
+  int maxNumber2(List<int> arr) {
+    // int maxNumber = -2147483648;
+    int maxNumber = 2147483647;
+    for (var n in arr) {
+      maxNumber = min(n, maxNumber);
+    }
+    return maxNumber;
+  }
+
+  double floatNumber(List<int> arr) {
+    var res = 0;
+    for (var n in arr) {
+      res += n;
+    }
+    return (res / arr.length);
+  }
+
+  maxinarr(List<List<int>> arr) {
+    var res = arr.map((e) => e.map((e) => (e + e)));
   }
 }

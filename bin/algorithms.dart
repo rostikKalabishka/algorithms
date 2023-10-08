@@ -39,6 +39,19 @@ void main() {
   // print(solution.reverseWords("  hello world  "));
   // print(solution.reverseWords("a good   example"));
 
-  print(solution.finalString("string"));
-  print(solution.finalString("poiinter"));
+  // print(solution.finalString("string"));
+
+  // print(solution.finalString("poiinter"));
+
+  print(solution.maxNumber([100, 2, 11, 123, 9]));
+  // print(solution.maxNumber2([-1392, -1920, -7, -453, -91234]));
+  print(solution.maxNumber2([9, 4, 1, 8, 7, 13, 6, 5]));
+  print(solution
+      .floatNumber([9, 4, 1, 8, 7, 9, 4, 1, 8, 7, 8, 7, 18, 3, 13, 6, 5]));
+
+  print(solution.maxinarr([
+    [95, 67, 13, 55, 44, 11, 10],
+    [7, 190, 4, 44, 11, 1, 99],
+    [0, 5, -1, 500, 14, 90, 1]
+  ]));
 }
