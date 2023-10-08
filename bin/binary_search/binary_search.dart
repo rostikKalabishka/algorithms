@@ -116,12 +116,15 @@ class Solution {
     }
     return res;
   }
+  //   print(solution.searchInsertV2([1, 3, 5, 6], 5));
+  // print(solution.searchInsertV2([1, 3, 5, 6], 2));
+  // print(solution.searchInsertV2([1, 3, 5, 6], 7));
 
   int searchInsertV2(List<int> nums, int target) {
     int low = 0;
     int high = nums.length - 1;
     while (low <= high) {
-      var midle = ((low + high) ~/ 2).toInt();
+      var midle = (low + high) ~/ 2;
       if (nums[midle] == target) {
         return midle;
       } else if (nums[midle] < target) {
@@ -132,5 +135,23 @@ class Solution {
     }
 
     return low;
+  }
+
+  List<int> intersect(List<int> nums1, List<int> nums2) {
+    List<int> res = [];
+    for (int num2 in nums2) {
+      if (nums1.contains(num2)) {
+        res.add(num2);
+        nums1.remove(num2);
+      }
+    }
+    return res;
+  }
+
+  String reverseWords(String s) {
+    s = s.trim();
+    s = s.replaceAll(RegExp('[ ]+'), ' ');
+
+    return s.split(' ').reversed.join(' ');
   }
 }

@@ -28,7 +28,14 @@ void main() {
   // print(solution.findTheDifference("", "y"));
   // print(solution.findTheDifference("а", "аа"));
 
-  print(solution.searchInsertV2([1, 3, 5, 6], 5));
-  print(solution.searchInsertV2([1, 3, 5, 6], 2));
-  print(solution.searchInsertV2([1, 3, 5, 6], 7));
+  // print(solution.searchInsertV2([1, 3, 5, 6], 5));
+  // print(solution.searchInsertV2([1, 3, 5, 6], 2));
+  // print(solution.searchInsertV2([1, 3, 5, 6], 7));
+
+  // print(solution.intersect([1, 2, 2, 1], [2, 2]));
+  // print(solution.intersect([4, 9, 5], [9, 4, 9, 8, 4]));
+
+  print(solution.reverseWords("the sky is blue"));
+  print(solution.reverseWords("  hello world  "));
+  print(solution.reverseWords("a good   example"));
 }
