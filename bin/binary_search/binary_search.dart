@@ -264,4 +264,19 @@ class Solution {
     }
     return resArr;
   }
+
+  List<int> searchRange(List<int> nums, int target) {
+    List<int> res = [];
+    if (nums.isEmpty) {
+      return [-1, -1];
+    }
+    for (var i = 0; i < nums.length; i++) {
+      if (nums[i] == target) {
+        res.add(i);
+      } else if (!nums.contains(target)) {
+        res = [-1, -1];
+      }
+    }
+    return res;
+  }
 }

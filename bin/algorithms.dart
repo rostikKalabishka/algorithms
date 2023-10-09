@@ -65,7 +65,13 @@ void main() {
   // print(solution.canBeEqual([3, 7, 9], [3, 7, 11]));
   // print(solution.canBeEqual([1, 2, 2, 3], [3, 7, 11]));
 
-  print(solution.twoSum([2, 7, 11, 15], 9));
-  print(solution.twoSum([3, 2, 4], 6));
-  print(solution.twoSum([3, 3], 6));
+  // print(solution.twoSum([2, 7, 11, 15], 9));
+  // print(solution.twoSum([3, 2, 4], 6));
+  // print(solution.twoSum([3, 3], 6));
+
+  print(solution.searchRange([5, 7, 7, 8, 8, 10], 8));
+
+  print(solution.searchRange([5, 7, 7, 8, 8, 10], 6));
+
+  print(solution.searchRange([], 0));
 }
