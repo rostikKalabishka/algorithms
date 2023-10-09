@@ -48,13 +48,21 @@ class Solution {
   //   return value;
   // }
 
-  bool containsDuplicate(List<int> nums) {
-    var boba = nums.toSet().length;
-    if (boba != nums.length) {
-      return true;
-    }
-    return false;
-  }
+// bool containsDuplicate(List<int> nums) {
+//       Set<int> uniqueNums = Set();
+
+//       for(int number in nums){
+//           if(uniqueNums.contains(number)){
+//               return true;
+//           }
+//           else{
+//               uniqueNums.add(number);
+//           }
+//       }
+//       return false;
+//   }
+
+  bool containsDuplicate(List<int> nums) => nums.toSet().length != nums.length;
 
   List<int> findDisappearedNumbers(List<int> nums) {
     List<int> value = [];
