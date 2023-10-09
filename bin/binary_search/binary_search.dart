@@ -211,4 +211,16 @@ class Solution {
       }
     }
   }
+
+  int findDuplicate(List<int> nums) {
+    Set res2 = {};
+    for (var i = 0; i < nums.length; i++) {
+      if (res2.contains(nums[i])) {
+        return nums[i];
+      } else {
+        res2.add(nums[i]);
+      }
+    }
+    return 0;
+  }
 }

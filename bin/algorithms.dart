@@ -55,5 +55,8 @@ void main() {
   //   [0, 5, -1, 500, 14, 90, 1]
   // ]));
 
-  print(solution.moveZeroes([0, 1, 0, 3, 12]));
+  // print(solution.moveZeroes([0, 1, 0, 3, 12]));
+
+  print(solution.findDuplicate([1, 3, 4, 2, 2]));
+  print(solution.findDuplicate([3, 1, 3, 4, 2]));
 }
