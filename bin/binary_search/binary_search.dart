@@ -203,7 +203,12 @@ class Solution {
     return (res / arr.length);
   }
 
-  maxinarr(List<List<int>> arr) {
-    var res = arr.map((e) => e.map((e) => (e + e)));
+  moveZeroes(List<int> nums) {
+    for (var i = 0; i < nums.length; i++) {
+      if (nums[i] == 0) {
+        nums.remove(0);
+        nums.add(0);
+      }
+    }
   }
 }
