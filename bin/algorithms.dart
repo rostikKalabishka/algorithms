@@ -60,8 +60,12 @@ void main() {
   // print(solution.findDuplicate([1, 3, 4, 2, 2]));
   // print(solution.findDuplicate([3, 1, 3, 4, 2]));
 
-  print(solution.canBeEqual([1, 2, 3, 4], [2, 4, 1, 3]));
-  print(solution.canBeEqual([7], [7]));
-  print(solution.canBeEqual([3, 7, 9], [3, 7, 11]));
-  print(solution.canBeEqual([1, 2, 2, 3], [3, 7, 11]));
+  // print(solution.canBeEqual([1, 2, 3, 4], [2, 4, 1, 3]));
+  // print(solution.canBeEqual([7], [7]));
+  // print(solution.canBeEqual([3, 7, 9], [3, 7, 11]));
+  // print(solution.canBeEqual([1, 2, 2, 3], [3, 7, 11]));
+
+  print(solution.twoSum([2, 7, 11, 15], 9));
+  print(solution.twoSum([3, 2, 4], 6));
+  print(solution.twoSum([3, 3], 6));
 }

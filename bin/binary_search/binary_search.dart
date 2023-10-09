@@ -245,10 +245,23 @@ class Solution {
     target.sort();
     arr.sort();
     for (var i = 0; i < target.length; i++) {
-      if (target[i] == arr[i]) {
-        return true;
+      if (target[i] != arr[i]) {
+        return false;
       }
     }
-    return false;
+    return true;
+  }
+
+  List<int> twoSum(List<int> nums, int target) {
+    List<int> resArr = [];
+
+    for (var i = 0; i < nums.length; i++) {
+      for (var j = i + 1; j < nums.length; j++) {
+        if (nums[i] + nums[j] == target) {
+          resArr = [i, j];
+        }
+      }
+    }
+    return resArr;
   }
 }
