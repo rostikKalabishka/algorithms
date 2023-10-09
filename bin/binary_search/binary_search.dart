@@ -223,4 +223,32 @@ class Solution {
     }
     return 0;
   }
+
+  // bool canBeEqual(List<int> target, List<int> arr) {
+  //   if (target.length != arr.length) return false;
+  //   for (var i = 0; i < target.length; i++) {
+  //     if (!target.contains(arr[i])) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
+  // }
+
+  // bool canBeEqual(List<int> target, List<int> arr) {
+  //   target.sort();
+  //   arr.sort();
+  //   return target.toString() == arr.toString();
+  // }
+
+  bool canBeEqual(List<int> target, List<int> arr) {
+    if (target.length != arr.length) return false;
+    target.sort();
+    arr.sort();
+    for (var i = 0; i < target.length; i++) {
+      if (target[i] == arr[i]) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
