@@ -75,6 +75,12 @@ void main() {
 
   // print(solution.searchRange([], 0));
 
-  print(solution.reverseWords("Let's take LeetCode contest"));
-  print(solution.reverseWords("God Ding"));
+  // print(solution.reverseWords("Let's take LeetCode contest"));
+  // print(solution.reverseWords("God Ding"));
+
+  print(solution.reverse(123));
+  print(solution.reverse(-123));
+  print(solution.reverse(120));
+  print(solution.reverse(-2147483648));
+  print(solution.reverse(0));
 }

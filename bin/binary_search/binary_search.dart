@@ -285,4 +285,23 @@ class Solution {
     var res = (arrString.map((e) => e.split('').reversed.join())).join(' ');
     return res;
   }
+
+  int reverse(int x) {
+    var arrX = x.toString().split('');
+    var res = 0;
+    for (var i = 0; i < arrX.length; i++) {
+      if (arrX[i] == '-') {
+        arrX.remove('-');
+        arrX.add('-');
+      }
+      if (arrX.last == '0' && arrX.length > 2) {
+        arrX.removeLast();
+      }
+    }
+    res = int.parse(((arrX.reversed.join())));
+    if (2147483647 < res || res < -2147483648) {
+      return 0;
+    }
+    return res;
+  }
 }
