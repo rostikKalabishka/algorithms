@@ -78,9 +78,22 @@ void main() {
   // print(solution.reverseWords("Let's take LeetCode contest"));
   // print(solution.reverseWords("God Ding"));
 
-  print(solution.reverse(123));
-  print(solution.reverse(-123));
-  print(solution.reverse(120));
-  print(solution.reverse(-2147483648));
-  print(solution.reverse(0));
+  // print(solution.reverse(123));
+  // print(solution.reverse(-123));
+  // print(solution.reverse(120));
+  // print(solution.reverse(-2147483648));
+  // print(solution.reverse(0));
+
+  // print(solution.myAtoi("42"));
+  // print(solution.myAtoi("   -42"));
+  // print(solution.myAtoi("4193 with words"));
+
+  // print(solution.myAtoi(
+  //   [1, 2, 3, 0, 0, 0],
+  // ));
+  // print(solution.myAtoi("4193 with words"));
+  // print(solution.myAtoi("4193 with words"));
+
+  print(solution.intersection([1, 2, 2, 1], [2, 2]));
+  print(solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]));
 }

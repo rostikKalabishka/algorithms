@@ -304,4 +304,45 @@ class Solution {
     }
     return res;
   }
+
+  myAtoi(String s) {
+    s = s.trim();
+    if (s.isEmpty) return 0;
+    return int.parse(s.replaceAll(RegExp(r'-?[^-0-9]'), ''));
+  }
+
+  // void merge(List<int> nums1, int m, List<int> nums2, int n) {}
+
+  // List<int> intersection(List<int> nums1, List<int> nums2) {
+  //   var a = nums1.toSet().toList();
+  //   var b = nums2.toSet().toList();
+  //   List<int> res = [];
+  //   for (var i = 0; i < b.length; i++) {
+  //     if (a.contains(b[i])) {
+  //       res.add(b[i]);
+  //     }
+  //   }
+  //   return res;
+  // }
+
+  // List<int> intersection(List<int> nums1, List<int> nums2) {
+  //   var a = nums1.toSet();
+  //   var b = nums2.toSet();
+  //   var res = a.intersection(b);
+
+  //   return res.toList();
+  // }
+
+  List<int> intersection(List<int> nums1, List<int> nums2) {
+    Set<int> set = {};
+
+    for (var i = 0; i < nums1.length; i++) {
+      for (var j = 0; j < nums2.length; j++) {
+        if (nums1[i] == nums2[j]) {
+          set.add(nums1[i]);
+        }
+      }
+    }
+    return set.toList();
+  }
 }
