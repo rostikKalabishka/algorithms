@@ -158,12 +158,12 @@ class Solution {
     return res;
   }
 
-  String reverseWords(String s) {
-    s = s.trim();
-    s = s.replaceAll(RegExp('[ ]+'), ' ');
+  // String reverseWords(String s) {
+  //   s = s.trim();
+  //   s = s.replaceAll(RegExp('[ ]+'), ' ');
 
-    return s.split(' ').reversed.join(' ');
-  }
+  //   return s.split(' ').reversed.join(' ');
+  // }
 
   String finalString(String s) {
     List<String> x = [];
@@ -277,6 +277,12 @@ class Solution {
         res = [-1, -1];
       }
     }
+    return res;
+  }
+
+  reverseWords(String s) {
+    var arrString = s.split(' ');
+    var res = (arrString.map((e) => e.split('').reversed.join())).join(' ');
     return res;
   }
 }
