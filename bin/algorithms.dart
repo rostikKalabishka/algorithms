@@ -94,6 +94,12 @@ void main() {
   // print(solution.myAtoi("4193 with words"));
   // print(solution.myAtoi("4193 with words"));
 
-  print(solution.intersection([1, 2, 2, 1], [2, 2]));
-  print(solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]));
+  // print(solution.intersection([1, 2, 2, 1], [2, 2]));
+  // print(solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]));
+
+  // print(solution.majorityElement([3, 2, 3]));
+  // print(solution.majorityElement([2, 2, 1, 1, 1, 2, 2]));
+  print(solution.merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+  print(solution.merge([1], 1, [], 0));
+  print(solution.merge([0], 0, [1], 0));
 }

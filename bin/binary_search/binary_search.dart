@@ -345,4 +345,26 @@ class Solution {
     }
     return set.toList();
   }
+
+  int majorityElement(List<int> nums) {
+    // int n = 0;
+    // var res = nums.toSet();
+    // for (var i = 0; i < nums.length; i++) {
+    //   n ^= nums[i];
+    // }
+    // for (var i = 0; i < res.length; i++) {
+    //   res.remove(n);
+    // }
+    // return res.first;
+    nums.sort();
+    return nums[nums.length ~/ 2];
+  }
+
+  merge(List<int> nums1, int m, List<int> nums2, int n) {
+    for (var i = 0; i < nums2.length; i++) {
+      nums1.add(nums2[i]);
+      nums1.remove(0);
+    }
+    nums1.sort();
+  }
 }
