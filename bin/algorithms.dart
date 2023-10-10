@@ -99,7 +99,10 @@ void main() {
 
   // print(solution.majorityElement([3, 2, 3]));
   // print(solution.majorityElement([2, 2, 1, 1, 1, 2, 2]));
-  print(solution.merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
-  print(solution.merge([1], 1, [], 0));
-  print(solution.merge([0], 0, [1], 0));
+  // print(solution.merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+  // print(solution.merge([1], 1, [], 0));
+  // print(solution.merge([0], 0, [1], 0));
+
+  print(solution.search([-1, 0, 3, 5, 9, 12], 9));
+  print(solution.search([-1, 0, 3, 5, 9, 12], 2));
 }

@@ -367,4 +367,34 @@ class Solution {
     }
     nums1.sort();
   }
+
+  bool isValid(String s) {
+    String string1 = '{}';
+    String string2 = '[]';
+    String string3 = '()';
+    if (s.contains(string1) || s.contains(string2) || s.contains(string3)) {
+      return true;
+    }
+    return false;
+  }
+
+  int search(List<int> nums, int target) {
+    int low = 0;
+    int high = nums.length - 1;
+    while (low <= high) {
+      int mid = (low + high) ~/ 2;
+      if (nums[mid] == target) {
+        return mid;
+      } else if (nums[mid] > target) {
+        high = mid - 1;
+      } else {
+        low = mid + 1;
+      }
+    }
+    return -1;
+  }
+
+  //  bool isSubsequence(String s, String t) {
+
+  // }
 }
