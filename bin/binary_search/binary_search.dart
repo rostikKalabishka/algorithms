@@ -449,14 +449,23 @@ class Solution {
   }
 
   List<int> twoSumTwo(List<int> numbers, int target) {
-    List<int> resArr = [];
-    for (int i = 0; i < numbers.length; i++) {
-      for (int j = i + 1; j < numbers.length; j++) {
-        if (numbers[i] + numbers[j] == target) {
-          resArr = [i + 1, j + 1];
-        }
-      }
+    // List<int> resArr = [];
+    // for (int i = 0; i < numbers.length; i++) {
+    //   for (int j = i + 1; j < numbers.length; j++) {
+    //     if (numbers[i] + numbers[j] == target) {
+    //       resArr = [i + 1, j + 1];
+    //     }
+    //   }
+    // }
+    // return resArr;
+
+    int l = 0;
+    int h = numbers.length - 1;
+    while (l < h) {
+      if (numbers[l] + numbers[h] > target) h--;
+      if (numbers[l] + numbers[h] < target) l++;
+      if (numbers[l] + numbers[h] == target) return [l + 1, h + 1];
     }
-    return resArr;
+    return [-1, -1];
   }
 }
