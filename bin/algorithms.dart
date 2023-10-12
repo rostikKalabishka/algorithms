@@ -92,7 +92,7 @@ void main() {
   //   [1, 2, 3, 0, 0, 0],
   // ));
   // print(solution.myAtoi("4193 with words"));
-  // print(solution.myAtoi("4193 with words"));
+  // print(solution.myAtoi("words and 987"));
 
   // print(solution.intersection([1, 2, 2, 1], [2, 2]));
   // print(solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]));
@@ -103,6 +103,20 @@ void main() {
   // print(solution.merge([1], 1, [], 0));
   // print(solution.merge([0], 0, [1], 0));
 
-  print(solution.search([-1, 0, 3, 5, 9, 12], 9));
-  print(solution.search([-1, 0, 3, 5, 9, 12], 2));
+  // print(solution.search([-1, 0, 3, 5, 9, 12], 9));
+  // print(solution.search([-1, 0, 3, 5, 9, 12], 2));
+
+  // print(solution.isSubsequence("abc", "ahbgdc"));
+  // print(solution.isSubsequence("axc", "ahbgdc"));
+
+  // print(solution.isAnagram("anagram", "nagaram"));
+  // print(solution.isAnagram("rat", "car"));
+
+  // print(solution.findPeakElement([1, 2, 3, 1]));
+  // print(solution.findPeakElement([1, 2, 1, 3, 5, 6, 4]));
+  // print(solution.findPeakElement([1, 2, 1]));
+
+  print(solution.twoSumTwo([2, 7, 11, 15], 9));
+  print(solution.twoSumTwo([2, 3, 4], 6));
+  print(solution.twoSumTwo([-1, 0], -1));
 }

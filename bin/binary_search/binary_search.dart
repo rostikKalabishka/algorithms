@@ -306,9 +306,14 @@ class Solution {
   }
 
   myAtoi(String s) {
+    // s = s.trim();
+    // if (s.isEmpty) return 0;
+    // return int.parse(s.replaceAll(RegExp(r'-?[^-0-9]'), ''));
     s = s.trim();
     if (s.isEmpty) return 0;
-    return int.parse(s.replaceAll(RegExp(r'-?[^-0-9]'), ''));
+    s = s.replaceAll(RegExp(r'-?[^\d]'), '');
+    if (s.isEmpty) return 0;
+    return int.parse(s);
   }
 
   // void merge(List<int> nums1, int m, List<int> nums2, int n) {}
@@ -394,7 +399,64 @@ class Solution {
     return -1;
   }
 
-  //  bool isSubsequence(String s, String t) {
-
+  // bool isSubsequence(String s, String t) {
+  //   for (var i = 0; i < s.length; i++) {
+  //     if (!t.contains(s[i])) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
   // }
+
+  isAnagram(String s, String t) {
+    if (s.length != t.length) {
+      return false;
+    }
+
+    var sArr = s.split('');
+    var tArr = t.split('');
+    sArr.sort();
+    tArr.sort();
+    for (var i = 0; i < sArr.length; i++) {
+      if (sArr[i] != tArr[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  int findPeakElement(List<int> nums) {
+    // int res = 0;
+    // for (var i = 0; i < nums.length; i++) {
+    //   if (nums[i] > nums[res]) {
+    //     res = i;
+    //   }
+    // }
+
+    // return res;
+
+    int left = 0;
+    int right = nums.length - 1;
+    while (left < right) {
+      int mid = (left + right) ~/ 2;
+      if (nums[mid] > nums[mid + 1]) {
+        right = mid;
+      } else {
+        left = mid + 1;
+      }
+    }
+    return left;
+  }
+
+  List<int> twoSumTwo(List<int> numbers, int target) {
+    List<int> resArr = [];
+    for (int i = 0; i < numbers.length; i++) {
+      for (int j = i + 1; j < numbers.length; j++) {
+        if (numbers[i] + numbers[j] == target) {
+          resArr = [i + 1, j + 1];
+        }
+      }
+    }
+    return resArr;
+  }
 }
