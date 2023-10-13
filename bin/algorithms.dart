@@ -137,8 +137,13 @@ void main() {
   // print(solution.smallerNumbersThanCurrent([6, 5, 4, 8]));
   // print(solution.smallerNumbersThanCurrent([7, 7, 7, 7]));
 
-  print(solution.specialArray([3, 5]));
-  print(solution.specialArray([0, 0]));
-  print(solution.specialArray([0, 4, 3, 0, 4]));
-  print(solution.specialArray([3, 6, 7, 7, 0]));
+  // print(solution.specialArray([3, 5]));
+  // print(solution.specialArray([0, 0]));
+  // print(solution.specialArray([0, 4, 3, 0, 4]));
+  // print(solution.specialArray([3, 6, 7, 7, 0]));
+
+  // print(solution.firstMissingPositive([1, 2, 0]));
+  // print(solution.firstMissingPositive([3, 4, -1, 1]));
+  // print(solution.firstMissingPositive([7, 8, 9, 11, 12]));
+  print(solution.firstMissingPositive([1]));
 }
