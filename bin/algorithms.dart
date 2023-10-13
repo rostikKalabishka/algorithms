@@ -69,11 +69,11 @@ void main() {
   // print(solution.twoSum([3, 2, 4], 6));
   // print(solution.twoSum([3, 3], 6));
 
-  // print(solution.searchRange([5, 7, 7, 8, 8, 10], 8));
+  print(solution.searchRange([5, 7, 7, 8, 8, 10], 8));
 
-  // print(solution.searchRange([5, 7, 7, 8, 8, 10], 6));
+  print(solution.searchRange([5, 7, 7, 8, 8, 10], 6));
 
-  // print(solution.searchRange([], 0));
+  print(solution.searchRange([], 0));
 
   // print(solution.reverseWords("Let's take LeetCode contest"));
   // print(solution.reverseWords("God Ding"));
@@ -145,5 +145,5 @@ void main() {
   // print(solution.firstMissingPositive([1, 2, 0]));
   // print(solution.firstMissingPositive([3, 4, -1, 1]));
   // print(solution.firstMissingPositive([7, 8, 9, 11, 12]));
-  print(solution.firstMissingPositive([1]));
+  // print(solution.firstMissingPositive([1]));
 }
