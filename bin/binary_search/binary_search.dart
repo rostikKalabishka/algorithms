@@ -271,6 +271,9 @@ class Solution {
       return [-1, -1];
     }
     for (var i = 0; i < nums.length; i++) {
+      if (nums.length == 1 && nums[i] == target) {
+        return [i, i];
+      }
       if (nums[i] == target) {
         res.add(i);
       } else if (!nums.contains(target)) {
@@ -485,5 +488,83 @@ class Solution {
     }
 
     return minLength == nums.length + 1 ? 0 : minLength;
+  }
+
+  List<int> findDuplicates(List<int> nums) {
+    List<int> res = [];
+    nums.sort();
+    var i = 0;
+    while (i < nums.length - 1) {
+      if (nums[i] == nums[i + 1]) {
+        res.add(nums[i]);
+      }
+      i++;
+    }
+    // if (nums.length <= 1) {
+    //   return [];
+    // }
+    // for (int i = 0; i < nums.length; i++) {
+    //   for (int j = i + 1; j < nums.length; j++) {
+    //     if (nums[i] == nums[j]) {
+    //       res.add(nums[j]);
+    //     }
+    //   }
+    // }
+    return res;
+  }
+
+  int peakIndexInMountainArray(List<int> arr) {
+    var arr2 = List<int>.from(arr);
+    arr2.sort();
+
+    int res = 0;
+    int max = arr2.last;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == max) {
+        res = i;
+      }
+    }
+    return res;
+  }
+
+  List<int> smallerNumbersThanCurrent(List<int> nums) {
+    List<int> res = [];
+
+    for (int i = 0; i < nums.length; i++) {
+      int cur = 0;
+      for (int j = 0; j < nums.length; j++) {
+        if (j != i && nums[i] > nums[j]) {
+          cur++;
+        }
+      }
+      res.add(cur);
+    }
+    return res;
+  }
+
+  int specialArray(List<int> nums) {
+    // int count = 0;
+
+    // for (int i = 0; i < nums.length; i++) {
+    //   if (nums[i] >= 2) {
+    //     count++;
+    //   }
+    // }
+    // if (nums == [0, 0]) {
+    //   count += -1;
+    // }
+    // return count;
+    for (int i = 1; i <= nums.length; i++) {
+      int count = 0;
+      for (int j = 0; j < nums.length; j++) {
+        if (nums[j] >= i) {
+          count++;
+        }
+      }
+      if (count == i) {
+        return i;
+      }
+    }
+    return -1;
   }
 }

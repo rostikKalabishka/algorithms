@@ -123,5 +123,22 @@ void main() {
   // print(solution.minSubArrayLen(7, [2, 3, 1, 2, 4, 3]));
   // print(solution.minSubArrayLen(4, [1, 4, 4]));
   // print(solution.minSubArrayLen(11, [1, 1, 1, 1, 1, 1, 1, 1]));
-  print(solution.minSubArrayLen(11, [1, 2, 3, 4, 5]));
+  // print(solution.minSubArrayLen(11, [1, 2, 3, 4, 5]));
+
+  // print(solution.findDuplicates([4, 3, 2, 7, 8, 2, 3, 1]));
+  // print(solution.findDuplicates([1, 1, 2]));
+  // print(solution.findDuplicates([1]));
+
+  // print(solution.peakIndexInMountainArray([0, 1, 0]));
+  // print(solution.peakIndexInMountainArray([0, 2, 1, 0]));
+  // print(solution.peakIndexInMountainArray([0, 10, 5, 2]));
+
+  // print(solution.smallerNumbersThanCurrent([8, 1, 2, 2, 3]));
+  // print(solution.smallerNumbersThanCurrent([6, 5, 4, 8]));
+  // print(solution.smallerNumbersThanCurrent([7, 7, 7, 7]));
+
+  print(solution.specialArray([3, 5]));
+  print(solution.specialArray([0, 0]));
+  print(solution.specialArray([0, 4, 3, 0, 4]));
+  print(solution.specialArray([3, 6, 7, 7, 0]));
 }
