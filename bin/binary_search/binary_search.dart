@@ -598,7 +598,69 @@ class Solution {
 
     return maxN;
   }
+
+  int prefixCount(List<String> words, String pref) {
+    // List<String> res = [];
+    // for (var element in words) {
+    //   if (element.startsWith(pref)) {
+    //     res.add(element);
+    //   }
+    // }
+    // return res.length;
+    int res = 0;
+    for (var element in words) {
+      if (element.startsWith(pref)) {
+        res++;
+      }
+    }
+    return res;
+  }
+
+  int minSteps(String s, String t) {
+    // int res = 0;
+    // int res2 = 0;
+    // for (int i = 0; i < s.length; i++) {
+    //   if (!t.contains(s[i])) {
+    //     res++;
+    //   }
+    // }
+
+    // for (int i = 0; i < t.length; i++) {
+    //   if (!s.contains(t[i])) {
+    //     res2++;
+    //   }
+    // }
+    // return res + res2;
+
+    int res = 0;
+    for (int i = 0; i < s.length; i++) {
+      if (!t.contains(s[i])) {
+        res++;
+      }
+    }
+
+    for (int i = 0; i < t.length; i++) {
+      if (!s.contains(t[i])) {
+        res++;
+      }
+    }
+    return res;
+  }
+
+  reverseString(List<String> s) {
+    int l = 0;
+    int r = s.length - 1;
+
+    while (r > l) {
+      String swap = s[l];
+      s[l] = s[r];
+      s[r] = swap;
+      r--;
+      l++;
+    }
+  }
 }
+
 
 
   // int missingNumber(List<int> nums) {

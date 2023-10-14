@@ -148,7 +148,17 @@ void main() {
   // print(solution.firstMissingPositive([7, 8, 9, 11, 12]));
   // print(solution.firstMissingPositive([1]));
 
-  print(solution.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
-  print(solution.maxSubArray([1]));
-  print(solution.maxSubArray([5, 4, -1, 7, 8]));
+  // print(solution.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+  // print(solution.maxSubArray([1]));
+  // print(solution.maxSubArray([5, 4, -1, 7, 8]));
+
+  // print(solution.prefixCount(["pay", "attention", "practice", "attend"], "at"));
+  // print(solution.prefixCount(["leetcode", "win", "loops", "success"], "code"));
+
+  // print(solution.minSteps('leetcode', "coats"));
+  // print(solution.minSteps("night", "thing"));
+  // print(solution.minSteps("cotxazilut", "nahrrmcchxwrieqqdwdpneitkxgnt"));
+
+  print(solution.reverseString(["h", "e", "l", "l", "o"]));
+  print(solution.reverseString(["H", "a", "n", "n", "a", "h"]));
 }
