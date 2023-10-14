@@ -159,6 +159,10 @@ void main() {
   // print(solution.minSteps("night", "thing"));
   // print(solution.minSteps("cotxazilut", "nahrrmcchxwrieqqdwdpneitkxgnt"));
 
-  print(solution.reverseString(["h", "e", "l", "l", "o"]));
-  print(solution.reverseString(["H", "a", "n", "n", "a", "h"]));
+  // print(solution.reverseString(["h", "e", "l", "l", "o"]));
+  // print(solution.reverseString(["H", "a", "n", "n", "a", "h"]));
+
+  print(solution.numIdenticalPairs([1, 2, 3, 1, 1, 3]));
+  print(solution.numIdenticalPairs([1, 1, 1, 1]));
+  print(solution.numIdenticalPairs([1, 2, 3]));
 }
