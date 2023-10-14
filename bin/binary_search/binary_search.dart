@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:math';
 
 class Solution {
@@ -305,11 +306,20 @@ class Solution {
     // s = s.trim();
     // if (s.isEmpty) return 0;
     // return int.parse(s.replaceAll(RegExp(r'-?[^-0-9]'), ''));
-    s = s.trim();
+    s = s.trimLeft();
+    if (s.startsWith(RegExp(r'[a-zA-z]'), 0)) {
+      return 0;
+    }
     if (s.isEmpty) return 0;
-    s = s.replaceAll(RegExp(r'-?[^\d]'), '');
+    s = s.replaceAll(RegExp(r'-?[^-0-9]'), '');
     if (s.isEmpty) return 0;
-    return int.parse(s);
+    int rs = int.parse(s);
+    if (rs <= -2147483648) {
+      return -2147483648;
+    } else if (rs > 2147483647) {
+      return 2147483647;
+    }
+    return rs;
   }
 
   // void merge(List<int> nums1, int m, List<int> nums2, int n) {}
@@ -572,6 +582,22 @@ class Solution {
     }
     return res;
   }
+
+  int maxSubArray(List<int> nums) {
+    int cur = 0;
+    int maxN = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+      if (cur < 0) {
+        cur = 0;
+      }
+
+      cur += nums[i];
+      maxN = max(maxN, cur);
+    }
+
+    return maxN;
+  }
 }
 
 
@@ -584,3 +610,6 @@ class Solution {
   //   }
   //   return value;
   // }
+
+
+  

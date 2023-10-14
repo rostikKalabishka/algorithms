@@ -69,11 +69,11 @@ void main() {
   // print(solution.twoSum([3, 2, 4], 6));
   // print(solution.twoSum([3, 3], 6));
 
-  print(solution.searchRange([5, 7, 7, 8, 8, 10], 8));
+  // print(solution.searchRange([5, 7, 7, 8, 8, 10], 8));
 
-  print(solution.searchRange([5, 7, 7, 8, 8, 10], 6));
+  // print(solution.searchRange([5, 7, 7, 8, 8, 10], 6));
 
-  print(solution.searchRange([], 0));
+  // print(solution.searchRange([], 0));
 
   // print(solution.reverseWords("Let's take LeetCode contest"));
   // print(solution.reverseWords("God Ding"));
@@ -86,13 +86,14 @@ void main() {
 
   // print(solution.myAtoi("42"));
   // print(solution.myAtoi("   -42"));
-  // print(solution.myAtoi("4193 with words"));
+  // // print(solution.myAtoi("4193 with words"));
 
-  // print(solution.myAtoi(
-  //   [1, 2, 3, 0, 0, 0],
-  // ));
+  // // print(solution.myAtoi(
+  // //   [1, 2, 3, 0, 0, 0],
+  // // ));
   // print(solution.myAtoi("4193 with words"));
   // print(solution.myAtoi("words and 987"));
+  // print(solution.myAtoi("-91283472332"));
 
   // print(solution.intersection([1, 2, 2, 1], [2, 2]));
   // print(solution.intersection([4, 9, 5], [9, 4, 9, 8, 4]));
@@ -146,4 +147,8 @@ void main() {
   // print(solution.firstMissingPositive([3, 4, -1, 1]));
   // print(solution.firstMissingPositive([7, 8, 9, 11, 12]));
   // print(solution.firstMissingPositive([1]));
+
+  print(solution.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+  print(solution.maxSubArray([1]));
+  print(solution.maxSubArray([5, 4, -1, 7, 8]));
 }
