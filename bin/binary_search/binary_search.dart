@@ -681,6 +681,30 @@ class Solution {
     }
     return -1;
   }
+
+  findMaxUnderBoundary(List<int> arr, int topK) {
+    int maxNumber = -2147483648;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] < topK) {
+        maxNumber = max(maxNumber, arr[i]);
+      }
+    }
+    return maxNumber;
+  }
+
+  findTopElement(List<int> arr, int numberOfElem) {
+    List<int> maxArr = [];
+
+    int previousMax = 2147483647;
+    for (int i = 0; i < numberOfElem; i++) {
+      int currentMax = findMaxUnderBoundary(arr, previousMax);
+      previousMax = currentMax;
+      maxArr.add(previousMax);
+    }
+    return maxArr;
+  }
+
+  // List<int> topKFrequent(List<int> nums, int k) {}
 }
 
   // int missingNumber(List<int> nums) {
