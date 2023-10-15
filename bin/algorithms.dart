@@ -170,8 +170,15 @@ void main() {
   // print(solution.firstUniqChar("loveleetcode"));
   // print(solution.firstUniqChar("aabb"));
 
-  print(solution.findTopElement([10, 6, 15, 93, 42, 7, 32], 3));
+  // print(solution.findTopElement([10, 6, 15, 93, 42, 7, 32], 3));
+  // print(solution.findTopElement([100, 100, 100, 55, 8], 4));
+
+  // print(solution.findTopMinElement([-10, 6, -15, -93, 42, 7, -32], 3));
+  // print(solution.findTopMinElement([10, -6, 15, 93, -42, -7, 32], 5));
 
   // print(solution.bobaK([1, 1, 1, 2, 2, 3], 2));
   // print(solution.bobaK([1],1));
+
+  print(solution.isPerfectSquare(16));
+  print(solution.isPerfectSquare(14));
 }

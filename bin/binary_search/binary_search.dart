@@ -682,7 +682,8 @@ class Solution {
     return -1;
   }
 
-  findMaxUnderBoundary(List<int> arr, int topK) {
+//Sorting by selection
+  int findMaxUnderBoundary(List<int> arr, int topK) {
     int maxNumber = -2147483648;
     for (int i = 0; i < arr.length; i++) {
       if (arr[i] < topK) {
@@ -704,18 +705,34 @@ class Solution {
     return maxArr;
   }
 
+// min
+  int findMinUnderBoundary(List<int> arr, int n) {
+    int minNumber = 2147483647;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] > n) {
+        minNumber = min(minNumber, arr[i]);
+      }
+    }
+
+    return minNumber;
+  }
+
+  List<int> findTopMinElement(List<int> arr, int numberOfElem) {
+    List<int> minArr = [];
+    int previousMin = -2147483648;
+    for (int i = 0; i < numberOfElem; i++) {
+      int current = findMinUnderBoundary(arr, previousMin);
+      previousMin = current;
+      minArr.add(previousMin);
+    }
+    return minArr;
+  }
+
+  bool isPerfectSquare(int num) {
+    int sqrtNum = sqrt(num).round();
+    if (sqrtNum * sqrtNum == num) return true;
+    return false;
+  }
+
   // List<int> topKFrequent(List<int> nums, int k) {}
 }
-
-  // int missingNumber(List<int> nums) {
-  //   int value = 0;
-  //   for (int i = 0; i <= nums.length; i++) {
-  //     if (!nums.contains(i)) {
-  //       value = i;
-  //     }
-  //   }
-  //   return value;
-  // }
-
-
-  
