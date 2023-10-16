@@ -734,5 +734,16 @@ class Solution {
     return false;
   }
 
+  int finalValueAfterOperations(List<String> operations) {
+    int ans = 0;
+    for (String str in operations) {
+      if (str == "--X" || str == "X--") {
+        ans -= 1;
+      } else {
+        ans += 1;
+      }
+    }
+    return ans;
+  }
   // List<int> topKFrequent(List<int> nums, int k) {}
 }
