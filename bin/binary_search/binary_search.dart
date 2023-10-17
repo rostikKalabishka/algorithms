@@ -750,5 +750,16 @@ class Solution {
     }
     return ans;
   }
-  // List<int> topKFrequent(List<int> nums, int k) {}
+
+  String reversePrefix(String word, String ch) {
+    if (!word.contains(ch)) {
+      return word;
+    }
+
+    int index = word.indexOf(ch);
+    String prefix = word.substring(0, index + 1);
+    String reversedPrefix = prefix.split('').reversed.join();
+
+    return reversedPrefix + word.substring(index + 1);
+  }
 }

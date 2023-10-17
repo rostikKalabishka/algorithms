@@ -117,9 +117,9 @@ void main() {
   // print(solution.findPeakElement([1, 2, 1, 3, 5, 6, 4]));
   // print(solution.findPeakElement([1, 2, 1]));
 
-  print(solution.twoSumTwo([2, 7, 11, 15], 9));
-  print(solution.twoSumTwo([2, 3, 4], 6));
-  print(solution.twoSumTwo([-1, 0], -1));
+  // print(solution.twoSumTwo([2, 7, 11, 15], 9));
+  // print(solution.twoSumTwo([2, 3, 4], 6));
+  // print(solution.twoSumTwo([-1, 0], -1));
 
   // print(solution.minSubArrayLen(7, [2, 3, 1, 2, 4, 3]));
   // print(solution.minSubArrayLen(4, [1, 4, 4]));
@@ -181,4 +181,8 @@ void main() {
 
   // print(solution.isPerfectSquare(16));
   // print(solution.isPerfectSquare(14));
+
+  print(solution.reversePrefix("abcdefd", 'd'));
+  print(solution.reversePrefix("xyxzxe", "z"));
+  print(solution.reversePrefix("abcd", 'z'));
 }
