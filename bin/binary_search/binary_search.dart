@@ -96,17 +96,22 @@ class Solution {
     return nums.length;
   }
 
-//   findTheDifference(String s, String t) {
-//     var splitS = s.split('');
-//     var splitT = t.split('');
-//     var res = [];
-//     for (var i = 0; i < splitT.length; i++) {
-//       if (!splitS.contains(splitT[i])) {
-//         res.add(splitT[i]);
-//       }
-//     }
-//     return res.join().toString();
-//   }
+  findTheDifference(String s, String t) {
+    int charSumS = 0;
+    int charSumT = 0;
+
+    for (int i = 0; i < s.length; i++) {
+      charSumS += s.codeUnitAt(i);
+    }
+
+    for (int i = 0; i < t.length; i++) {
+      charSumT += t.codeUnitAt(i);
+    }
+
+    int diff = charSumT - charSumS;
+
+    return String.fromCharCode(diff);
+  }
 
 //bad solution
   int searchInsert(List<int> nums, int target) {
