@@ -198,6 +198,6 @@ void main() {
   // print(solution.isUgly(1));
   // print(solution.isUgly(14));
 
-  print(solution.buildArray([0, 2, 1, 5, 3, 4]));
-  print(solution.buildArray([5, 0, 1, 2, 3, 4]));
+  print(solution.isStrictlyPalindromic(9));
+  print(solution.isStrictlyPalindromic(4));
 }

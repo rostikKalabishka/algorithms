@@ -824,4 +824,44 @@ class Solution {
     }
     return result.toList();
   }
+
+  // isStrictlyPalindromic(int n) {
+  //   final String numTo2 = n.toRadixString(2);
+  //   final String numTo3 = n.toRadixString(3);
+  //   final String numTo4 = n.toRadixString(4);
+  //   final String numTo5 = n.toRadixString(5);
+  //   final String numTo6 = n.toRadixString(6);
+  //   final String numTo7 = n.toRadixString(7);
+
+  //   if (numTo2 == numTo2.split('').reversed.join('') &&
+  //       numTo3 == numTo3.split('').reversed.join('') &&
+  //       numTo4 == numTo4.split('').reversed.join('') &&
+  //       numTo5 == numTo5.split('').reversed.join('') &&
+  //       numTo6 == numTo6.split('').reversed.join('') &&
+  //       numTo7 == numTo7.split('').reversed.join('')) {
+  //     return true;
+  //   }
+  //   return false;
+  // }
+
+  bool isStrictlyPalindromic(int n) {
+    Solution s = new Solution();
+    for (int i = 2; i <= n - 2; i++) {
+      if (s.ans(n, i))
+        continue;
+      else
+        return false;
+    }
+    return true;
+  }
+
+  bool ans(int n, int i) {
+    int temp = 0;
+    int check = n;
+    while (check != 0) {
+      temp = (temp * i) + check % i;
+      check ~/= 10;
+    }
+    return n == temp;
+  }
 }
