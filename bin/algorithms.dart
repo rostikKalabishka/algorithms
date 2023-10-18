@@ -194,7 +194,10 @@ void main() {
   // print(solution.maxRepeating("ababc", "ba"));
   // print(solution.maxRepeating("ababc", "ac"));
 
-  print(solution.isUgly(6));
-  print(solution.isUgly(1));
-  print(solution.isUgly(14));
+  // print(solution.isUgly(6));
+  // print(solution.isUgly(1));
+  // print(solution.isUgly(14));
+
+  print(solution.buildArray([0, 2, 1, 5, 3, 4]));
+  print(solution.buildArray([5, 0, 1, 2, 3, 4]));
 }
