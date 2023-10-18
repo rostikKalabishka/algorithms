@@ -182,7 +182,19 @@ void main() {
   // print(solution.isPerfectSquare(16));
   // print(solution.isPerfectSquare(14));
 
-  print(solution.reversePrefix("abcdefd", 'd'));
-  print(solution.reversePrefix("xyxzxe", "z"));
-  print(solution.reversePrefix("abcd", 'z'));
+  // print(solution.reversePrefix("abcdefd", 'd'));
+  // print(solution.reversePrefix("xyxzxe", "z"));
+  // print(solution.reversePrefix("abcd", 'z'));
+
+  // print(solution.minimizedStringLength("aaabc"));
+  // print(solution.minimizedStringLength("cbbd"));
+  // print(solution.minimizedStringLength("dddaaa"));
+
+  // print(solution.maxRepeating("ababc", "ab"));
+  // print(solution.maxRepeating("ababc", "ba"));
+  // print(solution.maxRepeating("ababc", "ac"));
+
+  print(solution.isUgly(6));
+  print(solution.isUgly(1));
+  print(solution.isUgly(14));
 }

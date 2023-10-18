@@ -762,4 +762,34 @@ class Solution {
 
     return reversedPrefix + word.substring(index + 1);
   }
+
+  int minimizedStringLength(String s) {
+    Set set = {};
+    for (int i = 0; i < s.length; i++) {
+      if (!set.contains(s[i])) {
+        set.add(s[i]);
+      }
+    }
+    return set.length;
+  }
+
+  int maxRepeating(String sequence, String word) {
+    int count = 0;
+    String res = word;
+    while (sequence.contains(res)) {
+      count++;
+      res += word;
+    }
+    return count;
+  }
+
+  bool isUgly(int n) {
+    if (n <= 0) return false;
+    for (int p in [2, 3, 5]) {
+      while (n % p == 0) {
+        n ~/= p;
+      }
+    }
+    return n == 1;
+  }
 }
