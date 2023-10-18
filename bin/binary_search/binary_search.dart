@@ -844,24 +844,38 @@ class Solution {
   //   return false;
   // }
 
+  // bool isStrictlyPalindromic(int n) {
+  //   Solution s = new Solution();
+  //   for (int i = 2; i <= n - 2; i++) {
+  //     if (s.ans(n, i))
+  //       continue;
+  //     else
+  //       return false;
+  //   }
+  //   return true;
+  // }
+
+  // bool ans(int n, int i) {
+  //   int temp = 0;
+  //   int check = n;
+  //   while (check != 0) {
+  //     temp = (temp * i) + check % i;
+  //     check ~/= 10;
+  //   }
+  //   return n == temp;
+  // }
+
   bool isStrictlyPalindromic(int n) {
-    Solution s = new Solution();
-    for (int i = 2; i <= n - 2; i++) {
-      if (s.ans(n, i))
-        continue;
-      else
+    if (n == 0 || n == 1) {
+      return true;
+    }
+
+    for (int i = 2; i <= 7; i++) {
+      String numberInBaseI = n.toRadixString(i);
+      if (numberInBaseI != numberInBaseI.split('').reversed.join('')) {
         return false;
+      }
     }
     return true;
-  }
-
-  bool ans(int n, int i) {
-    int temp = 0;
-    int check = n;
-    while (check != 0) {
-      temp = (temp * i) + check % i;
-      check ~/= 10;
-    }
-    return n == temp;
   }
 }
