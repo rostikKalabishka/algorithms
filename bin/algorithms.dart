@@ -201,7 +201,7 @@ void main() {
   // print(solution.isStrictlyPalindromic(9));
   // print(solution.isStrictlyPalindromic(4));
 
-  print(solution.maximumCount([-2, -1, -1, 1, 2, 3]));
-  print(solution.maximumCount([-3, -2, -1, 0, 0, 1, 2]));
-  print(solution.maximumCount([5, 20, 66, 1314]));
+  // print(solution.maximumCount([-2, -1, -1, 1, 2, 3]));
+  // print(solution.maximumCount([-3, -2, -1, 0, 0, 1, 2]));
+  // print(solution.maximumCount([5, 20, 66, 1314]));
 }
