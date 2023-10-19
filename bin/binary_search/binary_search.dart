@@ -878,4 +878,24 @@ class Solution {
     }
     return true;
   }
+
+  int maximumCount(List<int> nums) {
+    int res = 0;
+    int countPost = 0;
+    int countNeg = 0;
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] > 0) {
+        countPost++;
+      } else if (nums[i] < 0) {
+        countNeg++;
+      }
+
+      if (countPost > countNeg) {
+        res = countPost;
+      } else {
+        res = countNeg;
+      }
+    }
+    return res;
+  }
 }
