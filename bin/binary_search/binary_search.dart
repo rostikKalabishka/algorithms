@@ -915,4 +915,13 @@ class Solution {
     final int mask = (1 << num.bitLength) - 1;
     return num ^ mask;
   }
+
+  int singleNumber(List<int> nums) {
+    int x = 0, y = 0;
+    for (final num in nums) {
+      x = (x ^ num) & ~y;
+      y = (y ^ num) & ~x;
+    }
+    return x;
+  }
 }
