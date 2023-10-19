@@ -898,4 +898,16 @@ class Solution {
     }
     return res;
   }
+
+  int countNegatives(List<List<int>> grid) {
+    int ans = 0;
+    for (int i = 0; i < grid.length; i++) {
+      for (int j = 0; j < grid[i].length; j++) {
+        if (grid[i][j] < 0) {
+          ans += 1;
+        }
+      }
+    }
+    return ans;
+  }
 }
