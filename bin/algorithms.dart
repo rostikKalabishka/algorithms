@@ -204,4 +204,7 @@ void main() {
   // print(solution.maximumCount([-2, -1, -1, 1, 2, 3]));
   // print(solution.maximumCount([-3, -2, -1, 0, 0, 1, 2]));
   // print(solution.maximumCount([5, 20, 66, 1314]));
+
+  print(solution.maxProfit([7, 1, 5, 3, 6, 4]));
+  print(solution.maxProfit([7, 6, 4, 3, 1]));
 }
