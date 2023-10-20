@@ -934,4 +934,22 @@ class Solution {
     }
     return profit;
   }
+
+  int differenceOfSum(List<int> nums) {
+    int res1 = nums.reduce((value, element) => value + element);
+    var res2 = (nums.join('').split('').map((e) => int.parse(e)))
+        .reduce((value, element) => value + element);
+    return res1 - res2;
+
+    //   int elementSum = 0;
+    // int digitSum = 0;
+    // for (int num in nums) {
+    //   elementSum += num;
+    //   while (num > 0) {
+    //     digitSum += num % 10;
+    //     num ~/= 10;
+    //   }
+    // }
+    // return (elementSum - digitSum).abs();
+  }
 }
