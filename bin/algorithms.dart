@@ -215,7 +215,11 @@ void main() {
   // print(solution.findWords(["omk"]));
   // print(solution.findWords(["adsdf", "sfd"]));
 
-  print(solution.fizzBuzz(3));
-  print(solution.fizzBuzz(5));
-  print(solution.fizzBuzz(15));
+  // print(solution.fizzBuzz(3));
+  // print(solution.fizzBuzz(5));
+  // print(solution.fizzBuzz(15));
+
+  print(solution.addDigits(38));
+
+  print(solution.addDigits(0));
 }

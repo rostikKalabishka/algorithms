@@ -972,13 +972,34 @@ class Solution {
     for (int i = 1; i <= n; i++) {
       if (i % 3 == 0 && i % 5 == 0) {
         res.add('FizzBuzz');
+        continue;
       } else if (i % 3 == 0) {
         res.add('Buzz');
+        continue;
       } else if (i % 5 == 0) {
         res.add('Fizz');
+        continue;
       } else {
         res.add('$i');
       }
+    }
+
+    return res;
+  }
+
+  int addDigits(int num) {
+    var res = num.toString()
+        .split('')
+        .map((e) => int.parse(e))
+        .toList()
+        .reduce((value, element) => value + element);
+    while (res >= 10) {
+      res = res
+          .toString()
+          .split('')
+          .map((e) => int.parse(e))
+          .toList()
+          .reduce((value, element) => value + element);
     }
 
     return res;
