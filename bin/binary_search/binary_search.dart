@@ -1038,4 +1038,18 @@ class Solution {
 
     return maxcount;
   }
+
+  int maxPower(String s) {
+    int count = 1;
+    int maxNumber = 1;
+    for (int i = 0; i < s.length - 1; i++) {
+      if (s[i] == s[i + 1]) {
+        count++;
+        maxNumber = max(maxNumber, count);
+      } else {
+        count = 1;
+      }
+    }
+    return maxNumber;
+  }
 }

@@ -223,7 +223,11 @@ void main() {
 
   // print(solution.addDigits(0));
 
-  print(solution.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]));
+  // print(solution.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]));
 
-  print(solution.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1]));
+  // print(solution.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1]));
+
+  print(solution.maxPower("leetcode"));
+
+  print(solution.maxPower("abbcccddddeeeeedcba"));
 }
