@@ -208,6 +208,14 @@ void main() {
   // print(solution.maxProfit([7, 1, 5, 3, 6, 4]));
   // print(solution.maxProfit([7, 6, 4, 3, 1]));
 
-  print(solution.differenceOfSum([1, 15, 6, 3]));
-  print(solution.differenceOfSum([1, 2, 3, 4]));
+  // print(solution.differenceOfSum([1, 15, 6, 3]));
+  // print(solution.differenceOfSum([1, 2, 3, 4]));
+
+  // print(solution.findWords(["Hello", "Alaska", "Dad", "Peace"]));
+  // print(solution.findWords(["omk"]));
+  // print(solution.findWords(["adsdf", "sfd"]));
+
+  print(solution.fizzBuzz(3));
+  print(solution.fizzBuzz(5));
+  print(solution.fizzBuzz(15));
 }
