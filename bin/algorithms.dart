@@ -219,7 +219,11 @@ void main() {
   // print(solution.fizzBuzz(5));
   // print(solution.fizzBuzz(15));
 
-  print(solution.addDigits(38));
+  // print(solution.addDigits(38));
 
-  print(solution.addDigits(0));
+  // print(solution.addDigits(0));
+
+  print(solution.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]));
+
+  print(solution.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1]));
 }

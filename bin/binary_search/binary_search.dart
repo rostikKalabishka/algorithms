@@ -1004,4 +1004,21 @@ class Solution {
 
     return res;
   }
+
+  int findMaxConsecutiveOnes(List<int> nums) {
+    int count = 0;
+    List<int> res = [];
+
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] == 1) {
+        count++;
+        res.add(count);
+      } else {
+        count = 0;
+        res.add(count);
+      }
+    }
+    res.sort();
+    return res.last;
+  }
 }
