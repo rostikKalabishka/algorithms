@@ -227,7 +227,13 @@ void main() {
 
   // print(solution.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1]));
 
-  print(solution.maxPower("leetcode"));
+  // print(solution.maxPower("leetcode"));
 
-  print(solution.maxPower("abbcccddddeeeeedcba"));
+  // print(solution.maxPower("abbcccddddeeeeedcba"));
+
+  print(solution.isPowerOfFour(16));
+
+  print(solution.isPowerOfFour(5));
+  print(solution.isPowerOfFour(1));
+  print(solution.isPowerOfFour(-2147483648));
 }

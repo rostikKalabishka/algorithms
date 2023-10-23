@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:math';
 
 class Solution {
@@ -8,7 +7,7 @@ class Solution {
     int right = nums.length - 1;
 
     while (left <= right) {
-      int medium = ((left + right) / 2).toInt();
+      int medium = ((left + right) ~/ 2);
       if (nums[medium] == target) {
         return medium;
       } else if (nums[medium] > target) {
@@ -1051,5 +1050,20 @@ class Solution {
       }
     }
     return maxNumber;
+  }
+
+  bool isPowerOfFour(int n) {
+    final logarithm = log(n) / log(4);
+    return logarithm % 1 == 0;
+
+    //    if (n < 1) return false;
+    // while(n != 1) {
+    //   if (n % 4 == 0) {
+    //     n ~/= 4;
+    //   } else {
+    //     return false;
+    //   }
+    // }
+    // return true;
   }
 }
