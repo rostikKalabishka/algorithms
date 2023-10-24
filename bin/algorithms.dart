@@ -231,9 +231,12 @@ void main() {
 
   // print(solution.maxPower("abbcccddddeeeeedcba"));
 
-  print(solution.isPowerOfFour(16));
+  // print(solution.isPowerOfFour(16));
 
-  print(solution.isPowerOfFour(5));
-  print(solution.isPowerOfFour(1));
-  print(solution.isPowerOfFour(-2147483648));
+  // print(solution.isPowerOfFour(5));
+  // print(solution.isPowerOfFour(1));
+  // print(solution.isPowerOfFour(-2147483648));
+
+  print(solution.threeConsecutiveOdds([2, 6, 4, 1]));
+  print(solution.threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]));
 }
