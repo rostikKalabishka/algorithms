@@ -1100,3 +1100,17 @@ class Solution {
     return resik[0].toUpperCase() + resik.substring(1);
   }
 }
+
+class NumArray {
+  List<int> arr = [];
+
+  NumArray(List<int> nums) {
+    arr = nums;
+  }
+
+  int sumRange(int left, int right) {
+    int sum = 0;
+    for (int i = left; i <= right; i++) sum += arr[i];
+    return sum;
+  }
+}
