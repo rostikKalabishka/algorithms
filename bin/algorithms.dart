@@ -240,7 +240,11 @@ void main() {
   // print(solution.threeConsecutiveOdds([2, 6, 4, 1]));
   // print(solution.threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]));
 
-  print(solution.arrangeWords("Leetcode is cool"));
-  print(solution.arrangeWords("Keep calm and code on"));
-  print(solution.arrangeWords("To be or not to be"));
+  // print(solution.arrangeWords("Leetcode is cool"));
+  // print(solution.arrangeWords("Keep calm and code on"));
+  // print(solution.arrangeWords("To be or not to be"));
+
+  print(solution.isPowerOfTwo(1));
+  print(solution.isPowerOfTwo(16));
+  print(solution.isPowerOfTwo(3));
 }

@@ -1099,6 +1099,20 @@ class Solution {
 
     return resik[0].toUpperCase() + resik.substring(1);
   }
+
+  bool isPowerOfTwo(int n) {
+    if (n <= 0) {
+      return false;
+    }
+    while (n != 1) {
+      if ((n / 2) == (n ~/ 2) * 1.0) {
+        n ~/= 2;
+      } else {
+        return false;
+      }
+    }
+    return true;
+  }
 }
 
 class NumArray {
