@@ -1081,4 +1081,22 @@ class Solution {
     }
     return false;
   }
+
+  String arrangeWords(String text) {
+    // List<String> words = text.split(' ');
+
+    // words.sort((a, b) => a.length - b.length);
+
+    // String result = words.join(' ');
+
+    // result = result[0].toUpperCase() + result.substring(1);
+
+    // return result;
+
+    final res = text.toLowerCase().split(' ');
+    res.sort((a, b) => a.length - b.length);
+    final resik = res.join(' ');
+
+    return resik[0].toUpperCase() + resik.substring(1);
+  }
 }

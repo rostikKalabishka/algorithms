@@ -237,6 +237,10 @@ void main() {
   // print(solution.isPowerOfFour(1));
   // print(solution.isPowerOfFour(-2147483648));
 
-  print(solution.threeConsecutiveOdds([2, 6, 4, 1]));
-  print(solution.threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]));
+  // print(solution.threeConsecutiveOdds([2, 6, 4, 1]));
+  // print(solution.threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]));
+
+  print(solution.arrangeWords("Leetcode is cool"));
+  print(solution.arrangeWords("Keep calm and code on"));
+  print(solution.arrangeWords("To be or not to be"));
 }
