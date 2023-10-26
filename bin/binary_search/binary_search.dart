@@ -1123,6 +1123,30 @@ class Solution {
     }
     return res;
   }
+
+  List<int> separateDigits(List<int> nums) {
+    final res = nums.join('').split('').map((e) => int.parse(e)).toList();
+
+    return res;
+  }
+
+  int countEven(int num) {
+    int count = 0, sum = 0, q = 0, a = 0;
+    for (int i = 1; i <= num; i++) {
+      a = i;
+      q = 0;
+      sum = 0;
+      while (a > 0) {
+        q = a % 10;
+        sum = sum + q;
+        a = a ~/ 10;
+      }
+      if (sum % 2 == 0) {
+        count++;
+      }
+    }
+    return count;
+  }
 }
 
 // class NumArray {

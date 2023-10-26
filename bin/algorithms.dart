@@ -248,7 +248,13 @@ void main() {
   // print(solution.isPowerOfTwo(16));
   // print(solution.isPowerOfTwo(3));
 
-  print(solution.sumOfMultiples(7));
-  print(solution.sumOfMultiples(10));
-  print(solution.sumOfMultiples(9));
+  // print(solution.sumOfMultiples(7));
+  // print(solution.sumOfMultiples(10));
+  // print(solution.sumOfMultiples(9));
+
+  // print(solution.separateDigits([13, 25, 83, 77]));
+  // print(solution.separateDigits([7, 1, 3, 9]));
+
+  print(solution.countEven(4));
+  print(solution.countEven(30));
 }
