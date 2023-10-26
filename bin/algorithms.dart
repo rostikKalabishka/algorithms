@@ -244,7 +244,11 @@ void main() {
   // print(solution.arrangeWords("Keep calm and code on"));
   // print(solution.arrangeWords("To be or not to be"));
 
-  print(solution.isPowerOfTwo(1));
-  print(solution.isPowerOfTwo(16));
-  print(solution.isPowerOfTwo(3));
+  // print(solution.isPowerOfTwo(1));
+  // print(solution.isPowerOfTwo(16));
+  // print(solution.isPowerOfTwo(3));
+
+  print(solution.sumOfMultiples(7));
+  print(solution.sumOfMultiples(10));
+  print(solution.sumOfMultiples(9));
 }

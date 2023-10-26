@@ -1113,18 +1113,30 @@ class Solution {
     }
     return true;
   }
-}
 
-class NumArray {
-  List<int> arr = [];
-
-  NumArray(List<int> nums) {
-    arr = nums;
-  }
-
-  int sumRange(int left, int right) {
-    int sum = 0;
-    for (int i = left; i <= right; i++) sum += arr[i];
-    return sum;
+  int sumOfMultiples(int n) {
+    int res = 0;
+    for (int i = 1; i <= n; i++) {
+      if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+        res += i;
+      }
+    }
+    return res;
   }
 }
+
+// class NumArray {
+//   List<int> arr = [];
+
+//   NumArray(List<int> nums) {
+//     arr = nums;
+//   }
+
+//   int sumRange(int left, int right) {
+//     int sum = 0;
+//     for (int i = left; i <= right; i++) sum += arr[i];
+//     return sum;
+//   }
+
+ 
+// }
