@@ -255,6 +255,9 @@ void main() {
   // print(solution.separateDigits([13, 25, 83, 77]));
   // print(solution.separateDigits([7, 1, 3, 9]));
 
-  print(solution.countEven(4));
-  print(solution.countEven(30));
+  // print(solution.countEven(4));
+  // print(solution.countEven(30));
+
+  print(solution.checkPerfectNumber(28));
+  print(solution.checkPerfectNumber(7));
 }

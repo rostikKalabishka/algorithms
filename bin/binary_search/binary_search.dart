@@ -1147,6 +1147,34 @@ class Solution {
     }
     return count;
   }
+
+  bool checkPerfectNumber(int num) {
+    var arr = <int>[];
+
+    for (int i = 1; i < num; i++) {
+      if (num % i == 0) {
+        arr.add(i);
+      }
+    }
+    int res = arr.fold(0, (previousValue, element) => previousValue + element);
+
+    return res == num;
+
+    //  int sum =0;
+    //    for(int i=1;i<=num/2;i++){
+    //        if(num%i==0){
+    //            sum = sum+i;
+    //        }
+    //    }
+
+    //    if(sum==num){
+    //        return true;
+    //    }
+
+    //    return false;
+
+    // }
+  }
 }
 
 // class NumArray {
@@ -1164,10 +1192,10 @@ class Solution {
 
 // }
 
-class MyHashSet {
-  late final List<bool> _set;
-  MyHashSet() : _set = List<bool>.filled(1000001, false);
-  void add(int key) => _set[key] = true;
-  void remove(int key) => _set[key] = false;
-  bool contains(int key) => _set[key];
-}
+// class MyHashSet {
+//   late final List<bool> _set;
+//   MyHashSet() : _set = List<bool>.filled(1000001, false);
+//   void add(int key) => _set[key] = true;
+//   void remove(int key) => _set[key] = false;
+//   bool contains(int key) => _set[key];
+// }
