@@ -1162,5 +1162,12 @@ class Solution {
 //     return sum;
 //   }
 
- 
 // }
+
+class MyHashSet {
+  late final List<bool> _set;
+  MyHashSet() : _set = List<bool>.filled(1000001, false);
+  void add(int key) => _set[key] = true;
+  void remove(int key) => _set[key] = false;
+  bool contains(int key) => _set[key];
+}
