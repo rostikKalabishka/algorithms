@@ -258,6 +258,10 @@ void main() {
   // print(solution.countEven(4));
   // print(solution.countEven(30));
 
-  print(solution.checkPerfectNumber(28));
-  print(solution.checkPerfectNumber(7));
+  // print(solution.checkPerfectNumber(28));
+  // print(solution.checkPerfectNumber(7));
+
+  print(solution.sumOfUnique([1, 2, 3, 2]));
+  print(solution.sumOfUnique([1, 1, 1, 1, 1]));
+  print(solution.sumOfUnique([1, 2, 3, 4, 5]));
 }

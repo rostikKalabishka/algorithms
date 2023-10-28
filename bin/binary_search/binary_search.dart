@@ -1175,6 +1175,54 @@ class Solution {
 
     // }
   }
+
+  int numJewelsInStones(String jewels, String stones) {
+    int output = 0;
+    for (int i = 0; i < jewels.length; i++) {
+      for (int j = 0; j < stones.length; j++) {
+        if (jewels[i] == stones[j]) {
+          output++;
+        }
+      }
+    }
+    return output;
+  }
+
+  int sumOfUnique(List<int> nums) {
+    // Set<int> set = {};
+
+    // for (int i = 0; i < nums.length; i++) {
+    //   if (!set.contains(nums[i])) {
+    //     set.add(nums[i]);
+    //   } else {
+    //     set.remove(nums[i]);
+    //   }
+    // }
+
+    // int res = set.fold(0, (previousValue, element) => previousValue + element);
+    // if (res == set.first) {
+    //   res = 0;
+    // }
+    // return res;
+
+    int sum = 0;
+    List<int> unique = [];
+    for (int i = 0; i < nums.length; i++) {
+      int count = 1;
+      for (int j = 0; j < nums.length; j++) {
+        if (i != j && nums[i] == nums[j]) {
+          count++;
+        }
+      }
+      if (count == 1) {
+        unique.add(nums[i]);
+      }
+    }
+    for (int i = 0; i < unique.length; i++) {
+      sum = sum + unique[i];
+    }
+    return sum;
+  }
 }
 
 // class NumArray {
