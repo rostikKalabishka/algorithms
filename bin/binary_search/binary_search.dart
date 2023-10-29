@@ -1227,6 +1227,22 @@ class Solution {
   int theMaximumAchievableX(int num, int t) {
     return num + (t * 2);
   }
+
+  int countAsterisks(String s) {
+    int count = 0;
+    bool sign = false;
+    for (int i = 0; i < s.length; i++) {
+      if (s[i] == '|') {
+        sign = !sign;
+      }
+      ;
+      if (!sign) {
+        if (s[i] == '*') count++;
+      }
+    }
+
+    return count;
+  }
 }
  
 // class NumArray {
