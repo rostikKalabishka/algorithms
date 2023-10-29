@@ -261,7 +261,9 @@ void main() {
   // print(solution.checkPerfectNumber(28));
   // print(solution.checkPerfectNumber(7));
 
-  print(solution.sumOfUnique([1, 2, 3, 2]));
-  print(solution.sumOfUnique([1, 1, 1, 1, 1]));
-  print(solution.sumOfUnique([1, 2, 3, 4, 5]));
+  // print(solution.sumOfUnique([1, 2, 3, 2]));
+  // print(solution.sumOfUnique([1, 1, 1, 1, 1]));
+  // print(solution.sumOfUnique([1, 2, 3, 4, 5]));
+
+  // print(solution.sumOfUnique([1, 2, 3, 2]));
 }

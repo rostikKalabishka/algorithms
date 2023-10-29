@@ -1223,8 +1223,12 @@ class Solution {
     }
     return sum;
   }
-}
 
+  int theMaximumAchievableX(int num, int t) {
+    return num + (t * 2);
+  }
+}
+ 
 // class NumArray {
 //   List<int> arr = [];
 
