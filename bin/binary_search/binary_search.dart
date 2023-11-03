@@ -1258,6 +1258,23 @@ class Solution {
       return nums[x].toDouble();
     }
   }
+
+  List<String> buildArray2(List<int> target, int n) {
+    List<String> operations = [];
+    int num = 1;
+
+    for (int i = 0; i < target.length; i++) {
+      while (num < target[i]) {
+        operations.add("Push");
+        operations.add("Pop");
+        num++;
+      }
+      operations.add("Push");
+      num++;
+    }
+
+    return operations;
+  }
 }
  
 // class NumArray {
