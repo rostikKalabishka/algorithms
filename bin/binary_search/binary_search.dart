@@ -1235,7 +1235,7 @@ class Solution {
       if (s[i] == '|') {
         sign = !sign;
       }
-      ;
+
       if (!sign) {
         if (s[i] == '*') count++;
       }
@@ -1257,6 +1257,10 @@ class Solution {
       int x = middle;
       return nums[x].toDouble();
     }
+  }
+
+  bool arrayStringsAreEqual(List<String> word1, List<String> word2) {
+    return word1.join('') == word2.join('');
   }
 
   List<String> buildArray2(List<int> target, int n) {

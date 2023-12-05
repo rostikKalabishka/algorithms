@@ -266,4 +266,7 @@ void main() {
   // print(solution.sumOfUnique([1, 2, 3, 4, 5]));
 
   // print(solution.sumOfUnique([1, 2, 3, 2]));
+  // print(solution.arrayStringsAreEqual(["ab", "c"], ["a", "bc"]));
+  // print(solution.arrayStringsAreEqual(["a", "cb"], ["ab", "c"]));
+  // print(solution.arrayStringsAreEqual(["abc", "d", "defg"], ["abcddefg"]));
 }
