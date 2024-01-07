@@ -1244,6 +1244,31 @@ class Solution {
     return count;
   }
 
+  int lengthOfLIS(List<int> nums) {
+    if (nums.isEmpty) {
+      return 0;
+    }
+
+    List<int> dp = List.filled(nums.length, 1);
+
+    for (int i = 1; i < nums.length; i++) {
+      for (int j = 0; j < i; j++) {
+        if (nums[i] > nums[j]) {
+          dp[i] = dp[i].compareTo(dp[j] + 1) > 0 ? dp[i] : dp[j] + 1;
+        }
+      }
+    }
+
+    int maxLIS = 1;
+    for (int length in dp) {
+      if (length > maxLIS) {
+        maxLIS = length;
+      }
+    }
+
+    return maxLIS;
+  }
+
   double findMedianSortedArrays(List<int> nums1, List<int> nums2) {
     final nums = <int>[...nums1, ...nums2]..sort();
     final middle = nums.length ~/ 2; //Rounded integer middle
