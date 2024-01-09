@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:math';
 
 class Solution {
@@ -1328,7 +1329,44 @@ class Solution {
     return res;
   }
 }
- 
+
+class MyStack {
+  Queue<int> queue1 = Queue<int>();
+  Queue<int> queue2 = Queue<int>();
+
+  MyStack() {}
+
+  void push(int x) {
+    while (queue1.isNotEmpty) {
+      queue2.add(queue1.removeFirst());
+    }
+
+    queue1.add(x);
+
+    while (queue2.isNotEmpty) {
+      queue1.add(queue2.removeFirst());
+    }
+  }
+
+  int pop() {
+    if (queue1.isEmpty) {
+      throw Exception("Stack is empty");
+    }
+    return queue1.removeFirst();
+  }
+
+  int top() {
+    if (queue1.isEmpty) {
+      throw Exception("Stack is empty");
+    }
+    return queue1.first;
+  }
+
+  bool empty() {
+    return queue1.isEmpty;
+  }
+}
+
 // class NumArray {
 //   List<int> arr = [];
 
