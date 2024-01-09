@@ -269,4 +269,11 @@ void main() {
   // print(solution.arrayStringsAreEqual(["ab", "c"], ["a", "bc"]));
   // print(solution.arrayStringsAreEqual(["a", "cb"], ["ab", "c"]));
   // print(solution.arrayStringsAreEqual(["abc", "d", "defg"], ["abcddefg"]));
+
+  // print(solution.longestCommonPrefix(["flower", "flow", "flight"]));
+  // print(solution.longestCommonPrefix(["dog", "racecar", "car"]));
+
+  print(solution.isHappy(19));
+  print(solution.isHappy(2));
+  print(solution.isHappy(7));
 }

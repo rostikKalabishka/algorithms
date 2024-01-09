@@ -1304,6 +1304,29 @@ class Solution {
 
     return operations;
   }
+
+  bool isHappy(int n) {
+    Set<int> seen = Set();
+
+    while (n != 1 && !seen.contains(n)) {
+      seen.add(n);
+      List<int> digits = n.toString().split('').map(int.parse).toList();
+      n = digits.map((e) => e * e).reduce((a, b) => a + b);
+    }
+
+    return n == 1;
+  }
+
+  String longestCommonPrefix(List<String> strs) {
+    String res = strs.first;
+
+    for (final word in strs) {
+      while (!word.startsWith(res)) {
+        res = res.substring(0, res.length - 1);
+      }
+    }
+    return res;
+  }
 }
  
 // class NumArray {
