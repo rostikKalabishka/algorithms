@@ -1318,6 +1318,17 @@ class Solution {
     return n == 1;
   }
 
+  bool isPowerOfThree(int n) {
+    if (n < 1) {
+      return false;
+    }
+    while (n % 3 != 0) {
+      return true;
+    }
+
+    return true;
+  }
+
   String longestCommonPrefix(List<String> strs) {
     String res = strs.first;
 

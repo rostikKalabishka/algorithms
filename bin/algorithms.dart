@@ -273,7 +273,11 @@ void main() {
   // print(solution.longestCommonPrefix(["flower", "flow", "flight"]));
   // print(solution.longestCommonPrefix(["dog", "racecar", "car"]));
 
-  print(solution.isHappy(19));
-  print(solution.isHappy(2));
-  print(solution.isHappy(7));
+  // print(solution.isHappy(19));
+  // print(solution.isHappy(2));
+  // print(solution.isHappy(7));
+
+  print(solution.isPowerOfThree(27));
+  print(solution.isPowerOfThree(0));
+  print(solution.isPowerOfThree(-1));
 }
