@@ -1332,6 +1332,22 @@ class Solution {
     return true;
   }
 
+  bool isSubsequence(String s, String t) {
+    if (s.isEmpty) {
+      return true;
+    }
+
+    int sIndex = 0;
+
+    for (int i = 0; i < t.length && sIndex < s.length; i++) {
+      if (t[i] == s[sIndex]) {
+        sIndex++;
+      }
+    }
+
+    return sIndex == s.length;
+  }
+
   String longestCommonPrefix(List<String> strs) {
     String res = strs.first;
 

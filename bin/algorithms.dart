@@ -277,7 +277,13 @@ void main() {
   // print(solution.isHappy(2));
   // print(solution.isHappy(7));
 
-  print(solution.isPowerOfThree(27));
-  print(solution.isPowerOfThree(0));
-  print(solution.isPowerOfThree(-1));
+  // print(solution.isPowerOfThree(27));
+  // print(solution.isPowerOfThree(0));
+  // print(solution.isPowerOfThree(-1));
+
+  print(solution.isSubsequence("abc", "ahbgdc"));
+  print(solution.isSubsequence("axc", "ahbgdc"));
+  print(solution.isSubsequence("axc", "ahbgdc"));
+  print(solution.isSubsequence('acb', "ahbgdc"));
+  print(solution.isSubsequence('ab', "baab"));
 }
