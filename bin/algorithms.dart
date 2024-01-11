@@ -281,9 +281,12 @@ void main() {
   // print(solution.isPowerOfThree(0));
   // print(solution.isPowerOfThree(-1));
 
-  print(solution.isSubsequence("abc", "ahbgdc"));
-  print(solution.isSubsequence("axc", "ahbgdc"));
-  print(solution.isSubsequence("axc", "ahbgdc"));
-  print(solution.isSubsequence('acb', "ahbgdc"));
-  print(solution.isSubsequence('ab', "baab"));
+  // print(solution.isSubsequence("abc", "ahbgdc"));
+  // print(solution.isSubsequence("axc", "ahbgdc"));
+  // print(solution.isSubsequence("axc", "ahbgdc"));
+  // print(solution.isSubsequence('acb', "ahbgdc"));
+  // print(solution.isSubsequence('ab', "baab"));
+
+  print(solution.mySqrt(4));
+  print(solution.mySqrt(8));
 }

@@ -1358,6 +1358,19 @@ class Solution {
     }
     return res;
   }
+
+  int mySqrt(int x) {
+    var res = 2;
+
+    if (x <= 1) {
+      return x == 1 ? 1 : 0;
+    }
+    while (res * res <= x) {
+      res++;
+    }
+
+    return (res - 1).floor();
+  }
 }
 
 class MyStack {
